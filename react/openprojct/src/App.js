@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Main from "./components/main";
-import ProjectWidget from './components/projectWidget/ProjectWidget';
 import {json} from './json'
 
 let data=json();

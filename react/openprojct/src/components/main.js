@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import ProjectWidget from "./projectWidget/ProjectWidget";
+import './main.css';
+
 const styles = theme => ({
     root: {
         backgroundColor: theme.palette.primary.main,
@@ -13,6 +15,11 @@ const styles = theme => ({
     }
 });
 const Main = ({data}) => {
+    const projects = data.projects.map((data) =>
+        <div className="project-item">
+        <ProjectWidget title={data.name} desc={data.description}></ProjectWidget>
+        </div>
+    );
     return(<React.Fragment>
             <AppBar position="static">
                 <Toolbar variant="dense">
@@ -20,11 +27,14 @@ const Main = ({data}) => {
                         <MenuIcon/>
                     </IconButton>
                     <Typography variant="h6" color="inherit">
-                        Photos
+                        Projects
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <ProjectWidget data={data}></ProjectWidget>
+            <div className="project-wrapper">
+                {projects}
+            </div>
+
         </React.Fragment>
     )
 }

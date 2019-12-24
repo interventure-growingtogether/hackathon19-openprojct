@@ -1,0 +1,9 @@
+.project-wrapper {
+    /*display: inline-flex;*/
+    /*margin: 30px;*/
+}
+.project-item {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
