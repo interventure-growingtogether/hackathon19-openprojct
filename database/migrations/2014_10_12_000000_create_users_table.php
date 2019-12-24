@@ -18,9 +18,13 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('password')->default('');
+            // Cached from GitHub
+            $table->string('github_id')->unique();
+            $table->string('api_token')->unique()->nullable();
+            $table->boolean('repos_migrated')->default(false);
             $table->timestamps();
+            $table->rememberToken();
         });
     }
 
