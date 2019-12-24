@@ -6,15 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+    protected $guarded = ['id'];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [];
-
-    protected $guarder = ['id'];
-}
-
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
+    }
 }

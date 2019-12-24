@@ -37,8 +37,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function generateApiToken() {
-        $this->api_token = \Str::random(32);
-        $this->save();
+    public function projects()
+    {
+        return $this->belongsToMany('App\Project');
     }
+
 }
