@@ -4,8 +4,15 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller {
-    public function importProjects() 
+    public function importProjects($request) 
     {
-        \GitHub::user()->repositories($user->nickname)
+        $repos = $request->get('repos');
+
+        foreach($repos as $repo) {
+            $repo = \GitHub::repo()->show($user->nickname, $repo['name']);
+             
+            return dd($repo);
+        }
+        
     }
 }
