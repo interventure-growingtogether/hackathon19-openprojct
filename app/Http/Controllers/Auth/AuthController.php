@@ -41,7 +41,7 @@ class AuthController extends Controller {
 
         return json_encode([
             'api_token' => $authUser->api_token,
-            'repos_migrated' => $authUser->reposMigrated,
+            'repos_migrated' => $authUser->repos_migrated,
             'repos' => $repos
         ]);
     }
