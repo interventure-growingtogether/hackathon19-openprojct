@@ -30,5 +30,8 @@ $factory->define(\App\Project::class, function (Faker $faker) {
     return [
         'name' => $faker->company,
         'description' => implode(' ', $faker->sentences(3)),
+        'starts' => $faker->numberBetween(20, 1000),
+        'number_of_contributors' => $faker->numberBetween(1, 15),
+        'tags' => implode(', ', $faker->words(rand(3, 10))),
     ];
 });
