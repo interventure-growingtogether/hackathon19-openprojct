@@ -29,6 +29,6 @@ $factory->define(User::class, function (Faker $faker) {
 $factory->define(\App\Project::class, function (Faker $faker) {
     return [
         'name' => $faker->company,
-        'desc' => $faker->sentences(3),
+        'description' => implode(' ', $faker->sentences(3)),
     ];
 });

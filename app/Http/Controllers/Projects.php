@@ -15,7 +15,7 @@ class Projects extends Controller
     public function index()
     {
         //
-        return [['foo' => 'bar'], ['foo' => 'baz'], ];
+        return Project::all();
     }
 
     /**
