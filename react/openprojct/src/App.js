@@ -8,14 +8,12 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: null,
         };
     }
-
     render() {
         console.log("json",data);
         return (
-            <div>
+            <div className="App">
                 <Main data={data}></Main>
 
             </div>

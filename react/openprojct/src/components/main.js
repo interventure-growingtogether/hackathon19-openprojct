@@ -25,9 +25,9 @@ const Main = ({data}) => {
                 <Toolbar variant="dense">
                     <IconButton edge="start" color="inherit" aria-label="menu">
                         <MenuIcon/>
-                    </IconButton>
+                    </IconButton>User
                     <Typography variant="h6" color="inherit">
-                        Projects
+                        Photos
                     </Typography>
                 </Toolbar>
             </AppBar>
