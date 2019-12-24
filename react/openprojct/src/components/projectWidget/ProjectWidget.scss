@@ -1,0 +1,69 @@
+
+.projects-widget {
+  text-align: center;
+  .projects-wrapper {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.project-card {
+    .card {
+        height: 310px;
+        width: 310px;
+        background-color: #70c16b;
+        .card-header {
+            display: grid;
+            .company-image-card {
+                width: 50px;
+                height: 50px;
+                margin: auto;
+            }
+            .not-exist {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .title-section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .project-name {
+                    word-break: normal;
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+                button {
+                    font-size: 80px;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    outline: none;
+                    color: white;
+                }
+            }
+        }
+
+        .card-content {
+            .working-client {
+                padding-bottom: 1em;
+            }
+            .description {
+                display: inline-block;
+                font-size: 14px;
+                color:  #eeeeee;
+                padding: 0;
+                line-height: 1.33;
+            }
+            .worksOn,
+            .tasks {
+                font-size: 16px;
+                font-weight: bold;
+                color: #eeeeee;
+            }
+        }
+    }
+}
