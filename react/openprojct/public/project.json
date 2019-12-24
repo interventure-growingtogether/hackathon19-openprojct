@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "project1",
+            "desc": "project1",
+            "users": ["Stefan", "Vlada"]
+        },
+        {
+            "title": "project2",
+            "desc": "project2",
+            "users": ["Paja", "Strahinja"]
+        }
+    ]
+}
