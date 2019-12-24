@@ -10,3 +10,7 @@
 ## OpenProjct
 
 Discover people and projects around you,  join other people and collaborate on open source projects.
+
+##front
+- cd bootstrap-app/react/openprojct/
+- npm run build
