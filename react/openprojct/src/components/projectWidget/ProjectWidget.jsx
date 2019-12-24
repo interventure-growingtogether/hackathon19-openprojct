@@ -23,7 +23,8 @@ import PersonIcon from '@material-ui/icons/Person'
 
 const useStyles = makeStyles(theme => ({
     card: {
-        maxWidth: 345,
+        width: 345,
+        margin:5,
     },
     media: {
         height: 0,
@@ -56,7 +57,7 @@ export default function ProjectWidget({title, desc}) {
         <Card className={classes.card}>
             <CardHeader
                 avatar={
-                    <Avatar className={classes.green}>
+                    <Avatar style={{backgroundColor:"#63aa1b"}}>
                         R
                     </Avatar>
                 }

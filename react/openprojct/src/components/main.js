@@ -20,14 +20,14 @@ const Main = ({data}) => {
         <ProjectWidget title={data.name} desc={data.description}></ProjectWidget>
         </div>
     );
-    return(<React.Fragment>
+    return(<div style={{backgroundColor:"#e9f5df"}}>
             <AppBar position="static">
-                <Toolbar variant="dense">
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                <Toolbar variant="dense" style={{backgroundColor:"#63aa1b"}}>
+                    <IconButton edge="start" aria-label="menu">
                         <MenuIcon/>
-                    </IconButton>User
+                    </IconButton>
                     <Typography variant="h6" color="inherit">
-                        Photos
+                       OPEN PROJCT
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -35,7 +35,7 @@ const Main = ({data}) => {
                 {projects}
             </div>
 
-        </React.Fragment>
+        </div>
     )
 }
 export default withStyles(styles)(Main)
